@@ -1,12 +1,17 @@
 p{ 
-
-    color:rgb(241, 230, 230);
-background-color: rgb(0, 0, 0);
+  color:rgb(241, 230, 230);
+  background-color: rgb(0, 0, 0);
 }
 .titulo{
-    color:rgb(0, 0, 0);
-font-family:"Onyx Rgular";
-padding: 5px;
-border: 2px solid black;
-margin: 50px;
+  color:rgb(0, 0, 0);
+  font-family:"Onyx Rgular";
+  padding: 5px;
+  border: 2px solid black;
+  margin: 50px;
+}
+.site-header{ 
+  border-bottom: 2px dotted rgb(95, 69, 236);
+  padding-bottom: 16px; 
+  padding-top: 16px;
+  margin-bottom: 16px;
 }

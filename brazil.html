@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="borda.css">
+        <title>Brasil</title>
+       <link rel="stylesheet" href="style.css"> 
+			</head>
+    <body>
+    <header class="site-header">
+		  <a href="index.html">go home</a>
+    </header>
+        <canvas width="600" height="400"></canvas>
+
+    <script>
+        
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        //parte verde da bandeira, o fundo e maior parte
+        pincel.fillStyle = 'green'
+        pincel.fillRect(0, 0, 600, 400);
+        //cor amarela e parte de cima do losango feito em triangulo
+        pincel.fillStyle = 'yellow';
+        pincel.beginPath();
+        pincel.moveTo(300, 50);
+        pincel.lineTo(50, 200);
+        pincel.lineTo(550, 200);
+        pincel.fill();
+        //reaproveitamento da cor amarela de cima e parte de baixo do losango feito em outro triangulo
+        pincel.beginPath();
+        pincel.moveTo(300, 350);
+        pincel.lineTo(50, 200);
+        pincel.lineTo(550, 200);
+        pincel.fill();
+        //parte azul em circulo que fica no centro da bandeira
+        pincel.fillStyle = 'darkblue';
+        pincel.beginPath();
+        pincel.arc(300, 200, 100, 0, 2 * 3.14);
+        pincel.fill();
+        
+
+    </script>
+
+    </body>
+
+</html>
