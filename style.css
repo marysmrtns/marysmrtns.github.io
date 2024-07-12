@@ -15,3 +15,13 @@ p{
   padding-top: 16px;
   margin-bottom: 16px;
 }
+
+.button-link {
+  margin-right: 60px;
+  border: 1px solid black;
+  padding: 6px 12px;
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px 1px yellow;
+  border-radius: 4px; 
+}
